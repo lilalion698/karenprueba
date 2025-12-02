@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LashLift Pro - Estética de la Mirada</title>
+    <title>LashLift Pro - Ficha Clínica Digital</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -52,7 +52,7 @@
             </div>
             <button onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'})" 
                     class="bg-rose-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-rose-600 transition-colors duration-300 shadow-lg shadow-rose-200/50">
-                Agendar Cita
+                Llenar Ficha
             </button>
         </div>
     </nav>
@@ -72,11 +72,11 @@
                     <span class="italic text-rose-500 font-medium">con seguridad clínica</span>
                 </h1>
                 <p class="text-stone-500 text-lg leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
-                    Disfruta de un lifting de pestañas realizado por profesionales certificadas, en un ambiente estéril y relajante diseñado para tu bienestar.
+                    Lifting de pestañas realizado por profesionales certificadas. Completa tu ficha médica digital para garantizar un procedimiento 100% seguro.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <button onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'})" class="bg-stone-900 text-white px-8 py-4 rounded-full font-medium hover:bg-stone-800 transition shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                        Evaluar mi Perfil
+                        Completar Ficha
                     </button>
                     <div class="flex items-center gap-3 px-6 py-4 justify-center lg:justify-start">
                         <div class="flex -space-x-3">
@@ -95,7 +95,7 @@
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-rose-100/50 rounded-full blur-3xl -z-10"></div>
                 
                 <div class="relative rounded-[3rem] overflow-hidden shadow-2xl h-full border-8 border-white group">
-                    <!-- IMAGEN 1: PROCEDIMIENTO REAL CON PINZAS Y PARCHES (NO FACIAL) -->
+                    <!-- IMAGEN 1: PROCEDIMIENTO REAL CON PINZAS Y PARCHES -->
                     <img src="https://images.unsplash.com/photo-1631214500115-598fc2cb8d2d?q=80&w=1200&auto=format&fit=crop" 
                          alt="Profesional realizando tratamiento de lifting en pestañas con pinzas" 
                          class="w-full h-full object-cover object-center transform scale-105 group-hover:scale-100 transition duration-1000">
@@ -115,131 +115,202 @@
         </div>
     </header>
 
-    <!-- Sección Intermedia: Experiencia (Imagen de Profesional) -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12 rounded-3xl bg-stone-50 overflow-hidden border border-stone-100 shadow-sm">
-                <div class="w-full md:w-1/2 h-[400px]">
-                    <!-- Imagen de profesional con chaquetilla -->
-                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2000&auto=format&fit=crop" 
-                         alt="Especialista con uniforme blanco" 
-                         class="w-full h-full object-cover object-top">
-                </div>
-                <div class="w-full md:w-1/2 p-10 lg:p-16">
-                    <h3 class="font-serif text-3xl font-bold mb-4 text-stone-900">Protocolo Clínico y Estético</h3>
-                    <p class="text-stone-600 mb-6 leading-relaxed">
-                        Nuestras especialistas trabajan con rigurosos estándares de higiene. Usamos chaquetillas estériles, material desechable y productos hipoalergénicos de grado médico.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-stone-700">
-                            <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-500 flex items-center justify-center text-xs">✓</span>
-                            Evaluación previa de salud ocular
-                        </li>
-                        <li class="flex items-center gap-3 text-stone-700">
-                            <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-500 flex items-center justify-center text-xs">✓</span>
-                            Profesionales matriculadas
-                        </li>
-                        <li class="flex items-center gap-3 text-stone-700">
-                            <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-500 flex items-center justify-center text-xs">✓</span>
-                            Seguimiento post-tratamiento
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sección Formulario con Diseño Split -->
     <section id="formulario" class="max-w-7xl mx-auto px-6 py-24">
         <div class="text-center mb-12">
-            <span class="text-rose-500 font-bold tracking-widest text-xs uppercase mb-2 block">Paso 1</span>
-            <h2 class="text-4xl lg:text-5xl font-serif text-stone-900">Ficha de Anamnesis</h2>
+            <span class="text-rose-500 font-bold tracking-widest text-xs uppercase mb-2 block">Protocolo</span>
+            <h2 class="text-4xl lg:text-5xl font-serif text-stone-900">Ficha de Salud</h2>
         </div>
 
         <!-- Ajuste de columnas: Responsive (Grid 1 col en móvil, 2 cols en LG) -->
-        <div class="bg-white rounded-[2.5rem] shadow-2xl shadow-stone-200 border border-stone-100 overflow-hidden grid grid-cols-1 lg:grid-cols-2 min-h-0 lg:min-h-[800px]">
+        <div class="bg-white rounded-[2.5rem] shadow-2xl shadow-stone-200 border border-stone-100 overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-0">
             
-            <!-- Columna Izquierda: IMAGEN RESULTADO (OJO MACRO) -->
-            <!-- En móvil aparecerá arriba como banner -->
-            <div class="relative h-64 lg:h-auto bg-rose-50 group overflow-hidden">
-                <!-- IMAGEN 2: RESULTADO FINAL (OJO DEFINIDO) - Enlace corregido -->
+            <!-- Columna Izquierda: IMAGEN RESULTADO (OJO MACRO) - Menos ancha -->
+            <div class="relative h-64 lg:h-auto lg:col-span-4 bg-rose-50 group overflow-hidden order-1">
+                <!-- IMAGEN 2: RESULTADO FINAL (OJO DEFINIDO) -->
                 <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1200&auto=format&fit=crop" 
                      alt="Primer plano de ojo con pestañas arqueadas y perfectas" 
-                     class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition duration-700">
+                     class="absolute inset-0 w-full h-full object-cover object-center lg:sticky lg:top-0">
                 
                 <div class="absolute inset-0 bg-stone-900/10"></div>
-                
                 <div class="absolute bottom-0 left-0 right-0 p-8 text-white bg-gradient-to-t from-stone-900/60 to-transparent">
-                    <p class="font-serif italic text-xl opacity-90">"Tu mirada, elevada"</p>
+                    <p class="font-serif italic text-xl opacity-90">"Tu seguridad es nuestra prioridad"</p>
                 </div>
             </div>
 
-            <!-- Columna Derecha: El Formulario -->
-            <div class="p-8 md:p-12 lg:p-16 relative flex flex-col justify-center">
-                <div class="mb-8">
-                    <h3 class="font-serif text-2xl lg:text-3xl text-stone-900 mb-2">Comienza tu cambio</h3>
-                    <p class="text-stone-500 font-light text-sm">Completa esta ficha médica para asegurar que el tratamiento sea perfecto para ti.</p>
-                </div>
-
-                <form id="anamnesisForm" class="space-y-5 relative z-10">
-                    <!-- Datos Personales -->
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="group">
-                            <label class="block text-[10px] font-bold text-stone-400 uppercase tracking-wider mb-1.5">Nombre Completo</label>
-                            <input type="text" name="fullName" required placeholder="Tu nombre" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-all">
-                        </div>
-                        <div class="group">
-                            <label class="block text-[10px] font-bold text-stone-400 uppercase tracking-wider mb-1.5">WhatsApp</label>
-                            <input type="text" name="contact" required placeholder="+54 9..." class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-all">
-                        </div>
-                    </div>
-
-                    <!-- Preguntas de Salud -->
+            <!-- Columna Derecha: El Formulario (Más ancha) -->
+            <div class="p-8 md:p-12 lg:col-span-8 relative flex flex-col justify-center order-2">
+                
+                <form id="anamnesisForm" class="space-y-8 relative z-10">
+                    
+                    <!-- 1. INFORMACIÓN DEL CLIENTE -->
                     <div>
-                        <p class="text-sm font-bold text-stone-800 mb-3 flex items-center gap-2">
-                            <span class="w-1 h-5 bg-rose-500 rounded-full"></span>
-                            Antecedentes Médicos
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            <label class="flex items-center justify-between p-3 border border-stone-100 bg-stone-50 rounded-lg cursor-pointer hover:border-rose-200 hover:bg-rose-50/50 transition">
-                                <span class="text-xs text-stone-600">¿Usa lentes de contacto?</span>
-                                <input type="checkbox" name="wearContacts" class="w-4 h-4 text-rose-500 focus:ring-rose-500 border-gray-300 rounded">
-                            </label>
-
-                            <label class="flex items-center justify-between p-3 border border-stone-100 bg-stone-50 rounded-lg cursor-pointer hover:border-rose-200 hover:bg-rose-50/50 transition">
-                                <span class="text-xs text-stone-600">¿Infecciones recientes?</span>
-                                <input type="checkbox" name="eyeConditions" class="w-4 h-4 text-rose-500 focus:ring-rose-500 border-gray-300 rounded">
-                            </label>
-
-                            <label class="flex items-center justify-between p-3 border border-stone-100 bg-stone-50 rounded-lg cursor-pointer hover:border-rose-200 hover:bg-rose-50/50 transition">
-                                <span class="text-xs text-stone-600">¿Cirugía Ocular?</span>
-                                <input type="checkbox" name="recentEyeSurgery" class="w-4 h-4 text-rose-500 focus:ring-rose-500 border-gray-300 rounded">
-                            </label>
+                        <h3 class="font-serif text-xl font-bold text-stone-800 mb-4 flex items-center gap-2 border-b border-stone-100 pb-2">
+                            <span class="text-rose-500">1.</span> Información del Cliente
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="group md:col-span-2">
+                                <label class="text-[11px] font-bold text-stone-400 uppercase tracking-wider">Nombre Completo</label>
+                                <input type="text" name="fullName" required class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-rose-500 outline-none">
+                            </div>
+                            <div class="group">
+                                <label class="text-[11px] font-bold text-stone-400 uppercase tracking-wider">DNI</label>
+                                <input type="text" name="dni" required class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-rose-500 outline-none">
+                            </div>
+                            <div class="group">
+                                <label class="text-[11px] font-bold text-stone-400 uppercase tracking-wider">Edad / Fecha Nac.</label>
+                                <input type="text" name="dob" required class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-rose-500 outline-none">
+                            </div>
+                            <div class="group md:col-span-2">
+                                <label class="text-[11px] font-bold text-stone-400 uppercase tracking-wider">Teléfono / WhatsApp</label>
+                                <input type="text" name="contact" required class="w-full bg-stone-50 border border-stone-200 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-rose-500 outline-none">
+                            </div>
                             
-                            <label class="flex items-center justify-between p-3 border border-stone-100 bg-stone-50 rounded-lg cursor-pointer hover:border-rose-200 hover:bg-rose-50/50 transition">
-                                <span class="text-xs text-stone-600">¿Está embarazada?</span>
-                                <input type="checkbox" name="pregnant" class="w-4 h-4 text-rose-500 focus:ring-rose-500 border-gray-300 rounded">
-                            </label>
-
-                             <label class="flex items-center justify-between p-3 border border-stone-100 bg-stone-50 rounded-lg cursor-pointer hover:border-rose-200 hover:bg-rose-50/50 transition">
-                                <span class="text-xs text-stone-600">¿Desorden hormonal?</span>
-                                <input type="checkbox" name="hormonalImbalance" class="w-4 h-4 text-rose-500 focus:ring-rose-500 border-gray-300 rounded">
-                            </label>
+                            <!-- Contacto de Emergencia -->
+                            <div class="md:col-span-2 mt-2 bg-rose-50/50 p-4 rounded-lg border border-rose-100">
+                                <p class="text-xs font-bold text-rose-500 uppercase mb-2">Contacto de Emergencia</p>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                    <input type="text" name="emergencyName" placeholder="Nombre" class="w-full bg-white border border-rose-200 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-rose-500 outline-none">
+                                    <input type="text" name="emergencyPhone" placeholder="Teléfono" class="w-full bg-white border border-rose-200 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-rose-500 outline-none">
+                                    <input type="text" name="emergencyRelation" placeholder="Relación" class="w-full bg-white border border-rose-200 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-rose-500 outline-none">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Texto Libre -->
+                    <!-- 2. INFORMACIÓN MÉDICA -->
                     <div>
-                        <label class="block text-[10px] font-bold text-stone-400 uppercase tracking-wider mb-1.5">Alergias / Observaciones</label>
-                        <textarea name="allergies" placeholder="Detalle alergias a pegamentos, látex o medicación..." class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 h-20 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-all resize-none text-sm"></textarea>
+                        <h3 class="font-serif text-xl font-bold text-stone-800 mb-4 flex items-center gap-2 border-b border-stone-100 pb-2">
+                            <span class="text-rose-500">2.</span> Información Médica
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                            
+                            <!-- Enfermedades Crónicas -->
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" name="hasChronicDisease" class="mt-1 w-4 h-4 text-rose-500 rounded border-gray-300 focus:ring-rose-500">
+                                    <div class="w-full">
+                                        <span class="text-sm font-medium text-stone-700">¿Padece alguna enfermedad crónica?</span>
+                                        <p class="text-[10px] text-stone-400">(Diabetes, hipertensión, etc.)</p>
+                                        <input type="text" name="chronicDiseaseDetails" placeholder="Especifique cuál..." class="mt-2 w-full text-xs border-b border-stone-200 bg-transparent py-1 focus:border-rose-500 outline-none">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Medicamentos -->
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" name="takesMeds" class="mt-1 w-4 h-4 text-rose-500 rounded border-gray-300 focus:ring-rose-500">
+                                    <div class="w-full">
+                                        <span class="text-sm font-medium text-stone-700">¿Toma algún medicamento?</span>
+                                        <input type="text" name="medsDetails" placeholder="Especifique..." class="mt-2 w-full text-xs border-b border-stone-200 bg-transparent py-1 focus:border-rose-500 outline-none">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Alergias -->
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" name="hasAllergies" class="mt-1 w-4 h-4 text-rose-500 rounded border-gray-300 focus:ring-rose-500">
+                                    <div class="w-full">
+                                        <span class="text-sm font-medium text-stone-700">Alergias</span>
+                                        <p class="text-[10px] text-stone-400">(Medicamentos, alimentos, cosméticos)</p>
+                                        <input type="text" name="allergyDetails" placeholder="Especifique..." class="mt-2 w-full text-xs border-b border-stone-200 bg-transparent py-1 focus:border-rose-500 outline-none">
+                                    </div>
+                                </label>
+                            </div>
+
+                             <!-- Reacciones Previas -->
+                             <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" name="badReactions" class="mt-1 w-4 h-4 text-rose-500 rounded border-gray-300 focus:ring-rose-500">
+                                    <div class="w-full">
+                                        <span class="text-sm font-medium text-stone-700">¿Reacciones alérgicas previas?</span>
+                                        <p class="text-[10px] text-stone-400">En tratamientos estéticos anteriores</p>
+                                        <input type="text" name="reactionDetails" placeholder="Especifique..." class="mt-2 w-full text-xs border-b border-stone-200 bg-transparent py-1 focus:border-rose-500 outline-none">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Enfermedades Piel -->
+                            <div class="bg-stone-50 p-3 rounded-lg border border-stone-100">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" name="skinDisease" class="mt-1 w-4 h-4 text-rose-500 rounded border-gray-300 focus:ring-rose-500">
+                                    <div class="w-full">
+                                        <span class="text-sm font-medium text-stone-700">¿Enfermedades de la piel?</span>
+                                        <p class="text-[10px] text-stone-400">(Acné, rosácea, dermatitis, etc.)</p>
+                                        <input type="text" name="skinDetails" placeholder="Especifique..." class="mt-2 w-full text-xs border-b border-stone-200 bg-transparent py-1 focus:border-rose-500 outline-none">
+                                    </div>
+                                </label>
+                            </div>
+
+                             <!-- Enfermedades Oculares -->
+                             <div class="bg-stone-50 p-3 rounded-lg border border-stone-100 border-l-4 border-l-rose-400">
+                                <label class="flex items-start gap-3 cursor-pointer">
+                                    <input type="checkbox" name="eyeDisease" class="mt-1 w-4 h-4 text-rose-500 rounded border-gray-300 focus:ring-rose-500">
+                                    <div class="w-full">
+                                        <span class="text-sm font-bold text-stone-800">¿Enfermedades oculares?</span>
+                                        <p class="text-[10px] text-stone-400">(Glaucoma, conjuntivitis, ojo seco, etc.)</p>
+                                        <input type="text" name="eyeDetails" placeholder="Especifique..." class="mt-2 w-full text-xs border-b border-stone-200 bg-transparent py-1 focus:border-rose-500 outline-none">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Simples Checkboxes -->
+                            <div class="space-y-3 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <label class="flex items-center gap-3 p-2 bg-stone-50 rounded border border-stone-100 cursor-pointer">
+                                    <input type="checkbox" name="pregnant" class="w-4 h-4 text-rose-500 rounded focus:ring-rose-500">
+                                    <span class="text-sm text-stone-700">Embarazo o lactancia</span>
+                                </label>
+                                
+                                <label class="flex items-center gap-3 p-2 bg-stone-50 rounded border border-stone-100 cursor-pointer">
+                                    <input type="checkbox" name="contacts" class="w-4 h-4 text-rose-500 rounded focus:ring-rose-500">
+                                    <span class="text-sm text-stone-700">Usa lentes de contacto / Sensibilidad</span>
+                                </label>
+
+                                <label class="flex items-center gap-3 p-2 bg-stone-50 rounded border border-stone-100 cursor-pointer">
+                                    <input type="checkbox" name="smoker" class="w-4 h-4 text-rose-500 rounded focus:ring-rose-500">
+                                    <span class="text-sm text-stone-700">¿Fuma?</span>
+                                </label>
+
+                                <label class="flex items-center gap-3 p-2 bg-stone-50 rounded border border-stone-100 cursor-pointer">
+                                    <input type="checkbox" name="alcohol" class="w-4 h-4 text-rose-500 rounded focus:ring-rose-500">
+                                    <span class="text-sm text-stone-700">¿Consume alcohol?</span>
+                                </label>
+
+                                <label class="flex items-center gap-3 p-2 bg-stone-50 rounded border border-stone-100 cursor-pointer">
+                                    <input type="checkbox" name="diet" class="w-4 h-4 text-rose-500 rounded focus:ring-rose-500">
+                                    <span class="text-sm text-stone-700">¿Sigue alguna dieta especial?</span>
+                                </label>
+
+                                <label class="flex items-center gap-3 p-2 bg-stone-50 rounded border border-stone-100 cursor-pointer">
+                                    <input type="checkbox" name="autoimmune" class="w-4 h-4 text-rose-500 rounded focus:ring-rose-500">
+                                    <span class="text-sm text-stone-700">Enfermedades autoinmunes (Lupus, VIH)</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 3. CONSENTIMIENTO -->
+                    <div class="mt-8 bg-stone-100 p-6 rounded-xl border border-stone-200">
+                        <h4 class="font-serif font-bold text-stone-900 mb-2">Consentimiento Informado</h4>
+                        <p class="text-xs text-stone-500 text-justify mb-4 leading-relaxed">
+                            Declaro que he sido informada/o sobre el procedimiento, cuidados y posibles riesgos del tratamiento de permanente/lifting de pestañas con instrucciones escritas y orales. Acepto voluntariamente realizarme dicho tratamiento bajo mi responsabilidad. Confirmo que la información proporcionada arriba es verídica.
+                        </p>
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" required class="w-5 h-5 text-stone-900 rounded focus:ring-stone-900 border-stone-400">
+                            <span class="text-xs font-bold text-stone-800 uppercase tracking-wide">He leído y acepto los términos</span>
+                        </label>
                     </div>
 
                     <!-- Botón -->
                     <button type="submit" id="submitBtn" class="w-full bg-stone-900 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-stone-800 hover:shadow-xl transition transform hover:-translate-y-0.5 flex justify-center items-center gap-3">
-                        <span class="text-base">Obtener Diagnóstico Personalizado</span>
+                        <span class="text-base">Analizar Ficha con IA</span>
                         <span id="btnIcon" class="text-lg">✨</span>
                     </button>
-                    <p class="text-center text-[10px] text-stone-400 uppercase tracking-widest mt-4">Análisis realizado por Inteligencia Artificial</p>
+                    <p class="text-center text-[10px] text-stone-400 uppercase tracking-widest mt-4">Sus datos serán evaluados para seguridad del tratamiento</p>
                 </form>
             </div>
         </div>
@@ -318,7 +389,7 @@
                     Cerrar
                 </button>
                 <button id="whatsappBtn" class="px-6 py-3 bg-[#25D366] text-white font-bold rounded-xl hover:bg-[#20bd5a] flex items-center justify-center gap-2 shadow-lg shadow-green-200 transition transform hover:-translate-y-0.5 text-sm">
-                    <span>Contactar Especialista</span>
+                    <span>Enviar Ficha a Profesional</span>
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-8.68-2.031-9.67-.272-.099-.47-.149-.669-.149-.198 0-.42.001-.643.001-.223 0-.586.085-.893.421-.309.336-1.178 1.152-1.178 2.81 0 1.657 1.206 3.257 1.374 3.48.167.223 2.374 3.626 5.751 5.086 2.215.958 2.667.766 3.15.717.483-.049 1.558-.636 1.78-1.25.223-.614.223-1.14.156-1.25z"/></svg>
                 </button>
             </div>
@@ -354,19 +425,34 @@
             }
 
             const originalBtnText = submitBtn.innerHTML;
-            submitBtn.innerHTML = `<span class="text-base">Evaluando perfil...</span><div class="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full"></div>`;
+            submitBtn.innerHTML = `<span class="text-base">Evaluando perfil clínico...</span><div class="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full"></div>`;
             submitBtn.disabled = true;
 
             const formData = new FormData(form);
+            
+            // Recolección de Datos Ampliada
             const data = {
                 fullName: formData.get('fullName'),
+                dni: formData.get('dni'),
+                dob: formData.get('dob'),
                 contact: formData.get('contact'),
-                wearContacts: formData.get('wearContacts') === 'on' ? 'Sí' : 'No',
-                eyeConditions: formData.get('eyeConditions') === 'on' ? 'Sí' : 'No',
-                recentEyeSurgery: formData.get('recentEyeSurgery') === 'on' ? 'Sí' : 'No',
-                pregnant: formData.get('pregnant') === 'on' ? 'Sí' : 'No',
-                hormonalImbalance: formData.get('hormonalImbalance') === 'on' ? 'Sí' : 'No',
-                allergies: formData.get('allergies') || 'Ninguna',
+                emergency: `${formData.get('emergencyName')} (${formData.get('emergencyRelation')}) - ${formData.get('emergencyPhone')}`,
+                
+                // Historial Médico (Lógica Checkbox + Detalle)
+                chronicDisease: formData.get('hasChronicDisease') ? formData.get('chronicDiseaseDetails') || 'Sí, sin especificar' : 'No',
+                medications: formData.get('takesMeds') ? formData.get('medsDetails') || 'Sí, sin especificar' : 'No',
+                allergies: formData.get('hasAllergies') ? formData.get('allergyDetails') || 'Sí, sin especificar' : 'No',
+                badReactions: formData.get('badReactions') ? formData.get('reactionDetails') || 'Sí, sin especificar' : 'No',
+                skinDisease: formData.get('skinDisease') ? formData.get('skinDetails') || 'Sí, sin especificar' : 'No',
+                eyeDisease: formData.get('eyeDisease') ? formData.get('eyeDetails') || 'Sí, sin especificar' : 'No',
+                
+                // Lifestyle
+                pregnant: formData.get('pregnant') ? 'Sí' : 'No',
+                contacts: formData.get('contacts') ? 'Sí' : 'No',
+                smoker: formData.get('smoker') ? 'Sí' : 'No',
+                alcohol: formData.get('alcohol') ? 'Sí' : 'No',
+                diet: formData.get('diet') ? 'Sí' : 'No',
+                autoimmune: formData.get('autoimmune') ? 'Sí' : 'No',
             };
 
             currentClientData = data;
@@ -374,24 +460,30 @@
             try {
                 const ai = new GoogleGenAI({ apiKey: apiKey });
                 
+                // Prompt mejorado para el nuevo formulario
                 const prompt = `
-                    Actúa como especialista en lifting de pestañas. Analiza este cliente:
-                    - Lentes contacto: ${data.wearContacts}
-                    - Infecciones: ${data.eyeConditions}
-                    - Cirugía reciente: ${data.recentEyeSurgery}
-                    - Embarazo: ${data.pregnant}
-                    - Hormonas: ${data.hormonalImbalance}
+                    Actúa como especialista médico estético en lifting de pestañas. Evalúa esta ficha de anamnesis para encontrar contraindicaciones.
+                    
+                    DATOS DEL CLIENTE:
+                    - Enfermedades Crónicas: ${data.chronicDisease}
+                    - Medicación: ${data.medications}
                     - Alergias: ${data.allergies}
+                    - Reacciones Previas: ${data.badReactions}
+                    - Enf. Piel (Rosácea/Dermatitis): ${data.skinDisease}
+                    - Enf. Oculares (Glaucoma/Conjuntivitis): ${data.eyeDisease}
+                    - Embarazo/Lactancia: ${data.pregnant}
+                    - Lentes Contacto/Sensibilidad: ${data.contacts}
+                    - Enf. Autoinmunes: ${data.autoimmune}
 
                     Responde SOLO un JSON válido con esta estructura:
                     {
                         "safeToProceed": boolean,
                         "riskLevel": "Bajo" | "Medio" | "Alto",
-                        "reasoning": "Explicación profesional y cálida (max 15 palabras)",
-                        "recommendations": ["Recomendación 1", "Recomendación 2"],
+                        "reasoning": "Breve explicación profesional enfocada en los ojos y piel (max 20 palabras)",
+                        "recommendations": ["Recomendación 1", "Recomendación 2", "Recomendación 3"],
                         "metrics": {
-                            "eyeHealth": number (0-100),
-                            "skinResilience": number (0-100)
+                            "eyeHealth": number (0-100, basado en enf. oculares/lentes),
+                            "skinResilience": number (0-100, basado en alergias/piel)
                         }
                     }
                 `;
@@ -408,7 +500,7 @@
 
             } catch (error) {
                 console.error(error);
-                alert("Hubo un problema de conexión. Intenta nuevamente.");
+                alert("Error al procesar la solicitud. Verifica tu conexión.");
             } finally {
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.disabled = false;
@@ -421,7 +513,7 @@
             const statusBox = document.getElementById('statusBox');
             statusBox.className = `flex items-center gap-5 p-5 rounded-2xl border shadow-sm ${isSafe ? 'bg-green-50 border-green-200 text-green-900' : 'bg-rose-50 border-rose-200 text-rose-900'}`;
             document.getElementById('statusIcon').textContent = isSafe ? '✅' : '⚠️';
-            document.getElementById('statusTitle').textContent = isSafe ? 'Apto para Tratamiento' : 'Requiere Evaluación Presencial';
+            document.getElementById('statusTitle').textContent = isSafe ? 'Apto para Tratamiento' : 'Requiere Evaluación Médica';
             document.getElementById('statusDesc').textContent = `Nivel de Riesgo: ${result.riskLevel}`;
 
             document.getElementById('scoreEye').textContent = result.metrics.eyeHealth + '%';
@@ -460,16 +552,29 @@
             const c = currentClientData;
             const r = currentAnalysisResult;
             
-            const text = `*Nueva Consulta - LashLift Pro* 👁️\n\n` +
-                `👤 *Cliente:* ${c.fullName}\n` +
-                `📞 *Contacto:* ${c.contact}\n\n` +
-                `*Datos Médicos:*\n` +
-                `- Lentes: ${c.wearContacts}\n` +
-                `- Alergias: ${c.allergies}\n` +
-                `- Embarazo: ${c.pregnant}\n\n` +
-                `*Pre-Diagnóstico:* ${r.safeToProceed ? '✅ APTO' : '⚠️ REQUIERE REVISIÓN'}\n` +
-                `📊 Riesgo: ${r.riskLevel}\n` +
-                `📝 Nota IA: ${r.reasoning}`;
+            // Función para formatear booleanos/textos para WhatsApp
+            const fmt = (val) => (val === 'No' || val === '') ? 'No' : `⚠️ *${val}*`;
+
+            const text = `*FICHA TÉCNICA - LASH LIFT PRO* 👁️\n` +
+                `--------------------------------\n` +
+                `👤 *CLIENTE:* ${c.fullName}\n` +
+                `🆔 *DNI:* ${c.dni} | *Edad:* ${c.dob}\n` +
+                `📞 *Contacto:* ${c.contact}\n` +
+                `🆘 *Emergencia:* ${c.emergency}\n\n` +
+                `*HISTORIAL MÉDICO:*\n` +
+                `🔹 Enf. Crónicas: ${fmt(c.chronicDisease)}\n` +
+                `🔹 Medicación: ${fmt(c.medications)}\n` +
+                `🔹 Alergias: ${fmt(c.allergies)}\n` +
+                `🔹 Reacciones Previas: ${fmt(c.badReactions)}\n` +
+                `🔹 Piel (Dermatitis/Etc): ${fmt(c.skinDisease)}\n` +
+                `🔹 Ojos (Glaucoma/Etc): ${fmt(c.eyeDisease)}\n` +
+                `🔹 Lentes/Sensib.: ${fmt(c.contacts)}\n` +
+                `🔹 Embarazo: ${fmt(c.pregnant)}\n` +
+                `🔹 Autoinmunes: ${fmt(c.autoimmune)}\n\n` +
+                `*RESULTADO IA:*\n` +
+                `🩺 Estado: ${r.safeToProceed ? '✅ APTO' : '🛑 REVISAR'}\n` +
+                `📝 Obs: ${r.reasoning}\n\n` +
+                `_Ficha firmada digitalmente_`;
 
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
             window.open(url, '_blank');
